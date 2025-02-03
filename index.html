@@ -1,24 +1,124 @@
 <!DOCTYPE html>
-<html lang="en" theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
     <!-- Daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/84bacac311.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              accent: "#179800",
+              offwhite: "#EFEBE3",
+            },
+          },
+        },
+      };
+    </script>
     <style>
-        .sora-font {
-            font-family: "Sora", serif;
-          }
+      .sora-font {
+        font-family: "Sora", serif;
+      }
     </style>
-
-</head>
-<body>
-    hello
-</body>
+  </head>
+  <body class="sora-font">
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-white">
+      <nav class="container mx-auto">
+        <div class="navbar bg-base-100 flex justify-between max-w-full mx-auto border-b-2 border-accent md:border-hidden">
+          <div class="navbar-start">
+            <img src="./c2-assets/logo-header.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3 hidden md:flex">
+            
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <button class="btn bg-white rounded-xl border-2 border-accent">
+              Login
+            </button>
+            <button class="btn bg-accent rounded-xl border-2 text-white">
+              Register
+            </button>
+            
+          </div>
+          <i class="fa-solid fa-bars md:hidden mr-3"></i>
+        </div>
+      </nav>
+      <div class="container mx-auto text-center mt-20">
+        <!-- text -->
+        <div>
+            <h1 class="font-semibold text-6xl">Freshness <span class="text-accent">You Can <br>Count</span> On, Prices You’ll Love!</h1><br>
+            <p class="text-black/80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+        </div>
+        <!-- pic -->
+        <div class="flex justify-center">
+            <img src="./c2-assets/hero-vegetables.png" alt="">
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- Services -->
+        <div>
+            <div class="mt-24 mb-12 text-4xl font-semibold text-accent m-5 ">
+                Services
+            </div>
+            <div class="flex flex-col md:flex-row m-5 justify-evenly gap-6 mb-24 items-center text-center">
+                <div class="bg-offwhite rounded-2xl p-8 pb-11">
+                    <div class="flex justify-center relative mb-9">
+                        <div class="absolute rounded-full bg-white w-[150px] h-[150px]"></div>
+                        <img class="z-10 mt-6" src="./c2-assets/service.png" alt="">
+                    </div>
+                    <h4 class="mt-7 text-2xl font-semibold">24/7 Services </h4>
+                    <p class="font-light text-black/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-offwhite rounded-2xl p-8 pb-11">
+                    <div class="flex justify-center relative ">
+                        <div class="absolute rounded-full bg-white w-[150px] h-[150px]"></div>
+                        <img class="z-10 mt-6" src="./c2-assets/delivery.png" alt="">
+                    </div>
+                    <h4 class="mt-7 text-2xl font-semibold">24/7 Services </h4>
+                    <p class="font-light text-black/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-offwhite rounded-2xl p-8 pb-11">
+                    <div class="flex justify-center relative ">
+                        <div class="absolute rounded-full bg-white w-[150px] h-[150px]"></div>
+                        <img class="z-10 mt-6" src="./c2-assets/healthy.png" alt="">
+                    </div>
+                    <h4 class="mt-7 text-2xl font-semibold">24/7 Services </h4>
+                    <p class="font-light text-black/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
